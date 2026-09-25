@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Báo lỗ hổng bảo mật
+    url: https://github.com/HandLive/.github/blob/main/SECURITY.md
+    about: Báo kín qua "Report a vulnerability" hoặc email, không mở issue công khai
