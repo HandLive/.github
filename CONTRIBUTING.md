@@ -1,54 +1,50 @@
-# Đóng góp cho HandLive
+English | [Tiếng Việt](CONTRIBUTING.vi.md)
 
-*English summary at the end.*
+# Contributing to HandLive
 
-HandLive là dự án mã nguồn mở theo Apache License 2.0, gồm năm kho làm việc trong **một workspace**:
+HandLive is open source under the Apache License 2.0. It is made of five repositories that work together in **one workspace**:
 
-| Kho | Nội dung |
-|-----|----------|
-| [handlive](https://github.com/HandLive/handlive) | Hub: tài liệu thiết kế chi tiết (hợp đồng cho mọi mã), kế hoạch, design system, công cụ tài liệu — **đọc trước** |
-| [handlive-android](https://github.com/HandLive/handlive-android) | Ứng dụng Android (Kotlin, Gradle) |
-| [handlive-apple](https://github.com/HandLive/handlive-apple) | Ứng dụng macOS và iOS/iPadOS (Swift) |
-| [handlive-relay](https://github.com/HandLive/handlive-relay) | Cloud relay zero-knowledge (Rust) |
-| [handlive-shared](https://github.com/HandLive/handlive-shared) | Test vector, JSON Schema, design tokens dùng chung |
+| Repository | Contents |
+|------------|----------|
+| [handlive](https://github.com/HandLive/handlive) | Hub: detailed design (the contract for all code), implementation plan, design system, doc tools — **read first** |
+| [handlive-android](https://github.com/HandLive/handlive-android) | Android app (Kotlin, Gradle) |
+| [handlive-apple](https://github.com/HandLive/handlive-apple) | macOS and iOS/iPadOS apps (Swift) |
+| [handlive-relay](https://github.com/HandLive/handlive-relay) | Zero-knowledge cloud relay (Rust) |
+| [handlive-shared](https://github.com/HandLive/handlive-shared) | Shared contract: test vectors, JSON Schemas, design tokens, UI string catalog |
 
-## Chuẩn bị workspace
+## Set up the workspace
 
 ```sh
 git clone git@github.com:HandLive/handlive.git HandLive && cd HandLive
-tools/workspace.sh clone git@github.com:HandLive   # clone các kho còn lại vào android/, apple/, relay/, shared/
-tools/workspace.sh hooks                            # bật hook commit của dự án
+tools/workspace.sh clone git@github.com:HandLive   # clones the other repositories into android/, apple/, relay/, shared/
+tools/workspace.sh hooks                            # enables the project's commit hooks
 ```
 
-Bố cục này là bắt buộc: build và test đọc `../shared`, test Apple và công cụ schema đọc `../docs`. Lệnh build/test từng kho: `docs/codebase-summary.md` của hub và `README.md` của kho.
+This layout is required: builds and tests read `../shared`, and the Apple tests and schema tools read `../docs`. Build and test commands: the hub's `docs/codebase-summary.md` and each repository's `README.md`.
 
-## Quy trình
+## Workflow
 
-1. Mở issue (mẫu có sẵn) hoặc nhận một thẻ việc trong `plans/20260925-implementation/` của hub.
-2. Tài liệu là hợp đồng giữa các nền tảng: đổi giao thức, mã lỗi, chuỗi giao diện thì sửa `docs/detailed-design/` trước (`python3 tools/docs/validate_design_docs.py` phải in `problems=0`), rồi `shared/` (vector, schema), rồi mã nền tảng.
-3. Nhánh `feat/<slug>` hoặc `fix/<slug>` trong kho liên quan; PR vào `main` của kho đó. Sửa `shared/` thì PR ở handlive-shared trước, nêu rõ để các nền tảng khác chạy lại test.
-4. Test xanh trước khi mở PR; CI dựng lại đúng bố cục workspace.
+1. Open an issue (templates provided) or pick a task card in the hub's `plans/20260925-implementation/`.
+2. The docs are the contract between platforms. To change the protocol, error codes or UI text, change `docs/detailed-design/` first — both `X.md` and `X.vi.md`; `python3 tools/docs/validate_design_docs.py` must print `problems=0` and `python3 tools/docs/check_bilingual_docs.py` must pass — then `shared/` (vectors, schemas, string catalog), then platform code.
+3. Work on a `feat/<slug>` or `fix/<slug>` branch in each repository concerned, using the same branch name across repositories; CI checks out the matching branch of handlive-shared and of the hub when it exists. Open pull requests against `main`; a change to `shared/` goes first, flagged so the other platforms re-run their tests.
+4. Tests must pass before you open a pull request; CI rebuilds the workspace layout.
 
-## Commit
+## Commits
 
-- Conventional Commits, tiếng Anh, ngắn: `feat(android): …`, `fix(relay): …`, `test(apple): …`, `docs: …`.
-- Nhỏ và sớm: mỗi bước hợp lý một commit (khung → module → test → tài liệu); một commit không trải hai kho.
-- Đứng tên người thật và ký DCO: `git commit -s` thêm `Signed-off-by: Tên <email>`, xác nhận bạn có quyền đóng góp theo [Developer Certificate of Origin](https://developercertificate.org). Không ghi công cụ AI làm tác giả hay đồng tác giả — hook `.githooks/commit-msg` và job CI `commit-policy` từ chối.
-- Không commit secret, khóa, chứng chỉ, dotenv, file sinh của IDE hay build.
+- Conventional Commits in English, short: `feat(android): …`, `fix(relay): …`, `test(apple): …`, `docs: …`.
+- Small and early: one commit per logical step (scaffold → module → tests → docs); a commit never spans two repositories.
+- Under your real name, with a DCO sign-off: `git commit -s` adds `Signed-off-by: Name <email>`, certifying the [Developer Certificate of Origin](https://developercertificate.org). Never list an AI tool as author or co-author — the `.githooks/commit-msg` hook and the `commit-policy` CI job reject such commits.
+- Never commit secrets, keys, certificates, dotenv files, or IDE and build output.
 
-## Ngôn ngữ và giao diện
+## Languages
 
-- Tài liệu, kế hoạch, báo cáo, chuỗi giao diện: tiếng Việt có dấu (dấu kiểu Apple: hóa, xóa, hủy, tùy). Mã, commit, mã lỗi: tiếng Anh.
-- Chuỗi giao diện lấy nguyên văn từ tài liệu chi tiết; thành phần và token theo `docs/design-system/`.
+- The product is multilingual: English (`en`) is the default language and Vietnamese (`vi`) the second. Every UI string has a stable key in `shared/strings/ui-strings.json` with both languages, and code never hard-codes user-facing text. English UI text follows Apple's English style (title-style capitalization for buttons, menus and window titles); Vietnamese UI text uses Apple-style tone marks (hóa, xóa, hủy, tùy).
+- Documentation is bilingual: `X.md` in English (canonical) and `X.vi.md` in Vietnamese, with the same structure, updated in the same commit. Code, commit messages, error codes, logs and task reports are in English.
 
-## Phụ thuộc mới
+## New dependencies
 
-Chỉ giấy phép tương thích Apache-2.0: Apache, MIT, BSD, ISC, MPL-2.0, OFL (font). Không GPL, LGPL, AGPL. Tài nguyên bên thứ ba đóng gói trong app ghi vào `NOTICE` của kho.
+Only Apache-2.0-compatible licenses: Apache, MIT, BSD, ISC, MPL-2.0, OFL (fonts). No GPL, LGPL or AGPL. Prefer libraries without proprietary components so the apps can also be distributed outside the app stores. Third-party assets bundled into an app are listed in that repository's `NOTICE`.
 
-## Bảo mật
+## Security
 
-Không mở issue công khai cho lỗ hổng — xem [SECURITY.md](SECURITY.md).
-
-## English summary
-
-HandLive is Apache-2.0. Clone the hub and run `tools/workspace.sh clone` (the nested layout is required); the hub's docs are the contract — change them first, then `shared/`, then platform code. Small Conventional Commits under a real name with a DCO sign-off (`git commit -s`); never an AI tool as author or co-author. New dependencies must be Apache-2.0-compatible. Report vulnerabilities privately (SECURITY.md).
+Never open a public issue for a vulnerability — see [SECURITY.md](SECURITY.md).

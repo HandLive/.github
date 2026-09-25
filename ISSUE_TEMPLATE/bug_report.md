@@ -1,19 +1,19 @@
 ---
-name: Báo lỗi
-about: Lỗi tái hiện được (không dùng cho lỗ hổng bảo mật — xem SECURITY.md)
+name: Bug report
+about: A reproducible bug (not for security vulnerabilities — see SECURITY.md)
 labels: bug
 ---
 
-## Kho và phiên bản
+## Repository and version
 
-<!-- handlive-android / handlive-apple / handlive-relay / handlive-shared / handlive; commit hoặc phiên bản; thiết bị và hệ điều hành -->
+<!-- handlive-android / handlive-apple / handlive-relay / handlive-shared / handlive; commit or version; device, OS and app language -->
 
-## Các bước tái hiện
+## Steps to reproduce
 
 1.
 
-## Kết quả mong đợi và kết quả thực tế
+## Expected and actual result
 
-## Nhật ký, ảnh chụp
+## Logs and screenshots
 
-<!-- Không dán nội dung bảng nhớ tạm, SMS hay khóa thật -->
+<!-- Never paste real clipboard content, SMS or keys -->

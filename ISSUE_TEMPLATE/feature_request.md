@@ -1,13 +1,13 @@
 ---
-name: Đề xuất tính năng
-about: Tính năng hoặc thay đổi thiết kế
+name: Feature request
+about: A new feature or a design change
 labels: enhancement
 ---
 
-## Vấn đề cần giải quyết
+## Problem to solve
 
-## Đề xuất
+## Proposal
 
-<!-- Nếu đổi giao thức, mã lỗi hay giao diện: nêu mục tài liệu chi tiết bị ảnh hưởng (docs/detailed-design của kho hub) -->
+<!-- If it changes the protocol, error codes or the UI: name the affected sections of the detailed design (docs/detailed-design in the hub repository) -->
 
-## Phương án khác đã cân nhắc
+## Alternatives considered

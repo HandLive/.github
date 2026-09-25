@@ -1,23 +1,25 @@
-# Chính sách bảo mật
+English | [Tiếng Việt](SECURITY.vi.md)
 
-HandLive xử lý bảng nhớ tạm, SMS, cuộc gọi và camera của người dùng với mã hóa đầu cuối; lỗi bảo mật được ưu tiên cao nhất.
+# Security Policy
 
-## Báo cáo lỗ hổng
+HandLive handles people's clipboard, SMS, calls and camera with end-to-end encryption; security bugs have the highest priority.
 
-- Không mở issue công khai.
-- Dùng **Report a vulnerability** (tab Security) trên kho liên quan, hoặc email me@hxd.vn.
-- Gửi kèm: kho và commit, nền tảng, các bước tái hiện, tác động, PoC nếu có.
+## Reporting a vulnerability
 
-## Cam kết
+- Do not open a public issue.
+- Use **Report a vulnerability** (Security tab) on the affected repository, or email me@hxd.vn.
+- Include the repository and commit, the platform, steps to reproduce, the impact, and a proof of concept if you have one.
 
-- Xác nhận đã nhận trong 7 ngày; cập nhật tiến độ ít nhất mỗi 14 ngày.
-- Công bố phối hợp: vá trước, công bố sau — tối đa 90 ngày kể từ khi nhận, sớm hơn nếu vá xong.
-- Ghi công người báo cáo trong ghi chú phát hành nếu họ muốn. Chưa có chương trình thưởng.
+## Our commitment
 
-## Phạm vi
+- We acknowledge reports within 7 days and send progress updates at least every 14 days.
+- Coordinated disclosure: fix first, publish after — at most 90 days after the report, sooner once fixed.
+- We credit reporters in the release notes if they wish. There is no bounty program yet.
 
-Mọi kho của org HandLive: mã hóa và ghép nối (XChaCha20-Poly1305, X25519, HKDF, QR/PIN), giao thức WebSocket, relay zero-knowledge, quyền và dữ liệu trên thiết bị, CI và chuỗi cung ứng. Ngoài phạm vi: lỗ hổng của hệ điều hành hay thư viện bên thứ ba (báo cho họ; báo chúng tôi nếu ảnh hưởng HandLive), tấn công cần thiết bị đã root hoặc jailbreak.
+## Scope
 
-## Phiên bản hỗ trợ
+Every repository of the HandLive organization: encryption and pairing (XChaCha20-Poly1305, X25519, HKDF, QR/PIN), the WebSocket protocol, the zero-knowledge relay, on-device permissions and data, CI and the supply chain. Out of scope: vulnerabilities in operating systems or third-party libraries (report them upstream, and tell us if they affect HandLive), and attacks that need a rooted or jailbroken device.
 
-Dự án đang ở Phase 0, chưa phát hành. Khi phát hành: nhánh `main` và phiên bản mới nhất của mỗi kho.
+## Supported versions
+
+The project is in Phase 0 and has no release yet. Once released: the `main` branch and the latest release of each repository.

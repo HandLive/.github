@@ -1,27 +1,27 @@
+English | [Tiếng Việt](https://github.com/HandLive/.github/blob/main/profile/README.vi.md)
+
 # HandLive
 
-Điện thoại Android là điểm trung chuyển. Nó đưa clipboard, SMS, cuộc gọi kèm âm thanh, camera và mic sang macOS. iPhone và iPad nhận clipboard, SMS và thông tin cuộc gọi. Mã hóa đầu-cuối luôn bật. Relay không đọc nội dung. Mã nguồn mở, Apache License 2.0.
+**Your Android phone as the hub for your Mac, iPhone and iPad — clipboard, SMS, calls with live audio, and the phone's camera and microphone.** End-to-end encryption that cannot be turned off, a relay that never reads your content, and open source under the Apache License 2.0. Available in English and Vietnamese.
 
-*An Android phone is the hub. It brings clipboard, SMS, live call audio, and the camera or mic to a Mac. iPhone and iPad receive clipboard, SMS, and call details. End-to-end encryption stays on. The relay never reads the content. Apache License 2.0.*
+Design motto: *WebSocket for data, Bluetooth for voice.*
 
-Phương châm: *WebSocket cho dữ liệu, Bluetooth cho giọng nói.*
+| Repository | Role | Language |
+|------------|------|----------|
+| [handlive](https://github.com/HandLive/handlive) | Hub: detailed design (the contract for all code), plan and design system. **Start here.** | Markdown, Python |
+| [handlive-android](https://github.com/HandLive/handlive-android) | The phone app, hub of the system | Kotlin |
+| [handlive-apple](https://github.com/HandLive/handlive-apple) | Mac, iPhone and iPad apps | Swift |
+| [handlive-relay](https://github.com/HandLive/handlive-relay) | Cloud relay that never reads content | Rust |
+| [handlive-shared](https://github.com/HandLive/handlive-shared) | Shared test vectors, JSON Schemas, design tokens and UI strings | JSON, Python |
 
-| Kho | Vai trò | Ngôn ngữ |
-|-----|---------|----------|
-| [handlive](https://github.com/HandLive/handlive) | Hub tài liệu, kế hoạch và design system. **Bắt đầu từ đây.** | Markdown, Python |
-| [handlive-android](https://github.com/HandLive/handlive-android) | Ứng dụng trên điện thoại, hub của hệ thống | Kotlin |
-| [handlive-apple](https://github.com/HandLive/handlive-apple) | Ứng dụng Mac, iPhone và iPad | Swift |
-| [handlive-relay](https://github.com/HandLive/handlive-relay) | Máy chủ chuyển tiếp, không đọc nội dung | Rust |
-| [handlive-shared](https://github.com/HandLive/handlive-shared) | Test vector, JSON Schema, design token dùng chung | JSON, Python |
+| Feature | macOS | iOS/iPadOS |
+|---------|:-----:|:----------:|
+| Two-way clipboard | ✅ | ✅ |
+| Send and receive SMS | ✅ | ✅ |
+| Call details and control | ✅ | ✅ (no audio) |
+| Take calls on the computer (Bluetooth HFP, Opus/WebSocket fallback) | ✅ | ❌ |
+| Virtual camera and microphone for meeting apps | ✅ | ❌ |
 
-| Tính năng | macOS | iOS/iPadOS |
-|-----------|:-----:|:----------:|
-| Bảng nhớ tạm hai chiều | ✅ | ✅ |
-| SMS nhận/gửi | ✅ | ✅ |
-| Thông tin và điều khiển cuộc gọi | ✅ | ✅ (không âm thanh) |
-| Nghe gọi trên máy (Bluetooth HFP, dự phòng Opus/WebSocket) | ✅ | ❌ |
-| Camera và micro ảo cho ứng dụng họp | ✅ | ❌ |
+**Status:** Phase 0 (scaffold, protocol, encryption, tokens, CI) is done; there is no user-facing feature yet. Next is Phase 1: clipboard sync between Android and Mac. Roadmap: [docs/project-roadmap.md](https://github.com/HandLive/handlive/blob/main/docs/project-roadmap.md).
 
-**Trạng thái:** Phase 0 đã xong (khung, giao thức, mã hóa, token, CI). Chưa có tính năng cho người dùng. Bước tiếp theo là Phase 1, đồng bộ clipboard giữa Android và Mac. Lộ trình: [docs/project-roadmap.md](https://github.com/HandLive/handlive/blob/main/docs/project-roadmap.md).
-
-Đóng góp: [CONTRIBUTING](https://github.com/HandLive/.github/blob/main/CONTRIBUTING.md) · Bảo mật: [SECURITY](https://github.com/HandLive/.github/blob/main/SECURITY.md) · Ứng xử: [CODE_OF_CONDUCT](https://github.com/HandLive/.github/blob/main/CODE_OF_CONDUCT.md)
+[Contributing](https://github.com/HandLive/.github/blob/main/CONTRIBUTING.md) · [Security](https://github.com/HandLive/.github/blob/main/SECURITY.md) · [Code of Conduct](https://github.com/HandLive/.github/blob/main/CODE_OF_CONDUCT.md)

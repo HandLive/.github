@@ -1,25 +1,27 @@
-# Quy tắc ứng xử
+English | [Tiếng Việt](CODE_OF_CONDUCT.vi.md)
 
-Cộng đồng HandLive chào đón mọi người, không phân biệt tuổi, giới, khuyết tật, dân tộc, tôn giáo, trình độ hay xuất thân.
+# Code of Conduct
 
-## Mong đợi
+The HandLive community welcomes everyone, regardless of age, disability, ethnicity, gender, religion, experience, education or background.
 
-- Tôn trọng và lịch sự trong issue, PR, thảo luận; góp ý vào mã và ý tưởng, không vào con người.
-- Nhận phản hồi với thiện chí; thừa nhận sai và sửa.
-- Đặt điều tốt cho cộng đồng trên lợi ích riêng.
+## Expected behavior
 
-## Không chấp nhận
+- Be respectful and courteous in issues, pull requests and discussions; critique code and ideas, not people.
+- Accept feedback in good faith; own mistakes and fix them.
+- Put what is best for the community ahead of personal interest.
 
-- Quấy rối, xúc phạm, miệt thị, đe dọa, tấn công cá nhân hay chính trị.
-- Công bố thông tin riêng tư của người khác khi chưa được phép.
-- Hành vi không phù hợp trong môi trường chuyên nghiệp.
+## Unacceptable behavior
 
-## Thực thi
+- Harassment, insults, demeaning remarks, threats, personal or political attacks.
+- Publishing someone else's private information without their permission.
+- Any other conduct that would be inappropriate in a professional setting.
 
-Người bảo trì được xóa, sửa hoặc từ chối bình luận, commit, issue, PR vi phạm, và tạm thời hoặc vĩnh viễn cấm người vi phạm. Báo cáo vi phạm tới me@hxd.vn; mọi báo cáo được xem xét kín và trả lời trong 7 ngày.
+## Enforcement
 
-## Phạm vi
+Maintainers may remove, edit or reject comments, commits, issues and pull requests that violate this code, and may temporarily or permanently ban people who do so. Report violations to me@hxd.vn; every report is handled confidentially and answered within 7 days.
 
-Áp dụng trong mọi không gian của dự án (kho, issue, PR, thảo luận) và khi đại diện dự án ở nơi khác.
+## Scope
 
-Văn bản này viết theo tinh thần của [Contributor Covenant 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
+This code applies in every project space (repositories, issues, pull requests, discussions) and whenever someone represents the project elsewhere.
+
+This code is written in the spirit of the [Contributor Covenant 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
