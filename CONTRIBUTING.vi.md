@@ -2,15 +2,15 @@
 
 # Đóng góp cho HandLive
 
-HandLive là dự án mã nguồn mở theo Apache License 2.0, gồm năm kho làm việc trong **một workspace**:
+HandLive là dự án mã nguồn mở theo Apache License 2.0. Dự án đưa các tính năng native riêng trong từng hệ sinh thái, như Handoff trên Apple, lên Android. Dự án gồm năm kho làm việc trong **một workspace**:
 
 | Kho | Nội dung |
 |-----|----------|
-| [handlive](https://github.com/HandLive/handlive) | Hub: tài liệu thiết kế chi tiết (hợp đồng cho mọi mã), kế hoạch, design system, công cụ tài liệu — **đọc trước** |
-| [handlive-android](https://github.com/HandLive/handlive-android) | Ứng dụng Android (Kotlin, Gradle) |
-| [handlive-apple](https://github.com/HandLive/handlive-apple) | Ứng dụng macOS và iOS/iPadOS (Swift) |
-| [handlive-relay](https://github.com/HandLive/handlive-relay) | Cloud relay zero-knowledge (Rust) |
-| [handlive-shared](https://github.com/HandLive/handlive-shared) | Hợp đồng dùng chung: test vector, JSON Schema, design tokens, catalog chuỗi giao diện |
+| [handlive](https://github.com/HandLive/handlive) | Hub tài liệu: thiết kế chi tiết (đặc tả cho mọi mã), kế hoạch, design system, công cụ tài liệu. **Đọc trước.** |
+| [handlive-android](https://github.com/HandLive/handlive-android) | Ứng dụng trên điện thoại Android, thực thi Handoff và các tính năng continuity (Kotlin, Gradle) |
+| [handlive-apple](https://github.com/HandLive/handlive-apple) | Ứng dụng Mac, iPhone và iPad, nhận dữ liệu từ Android và gửi ngược lại (Swift) |
+| [handlive-relay](https://github.com/HandLive/handlive-relay) | Máy chủ chuyển tiếp khi các máy không cùng mạng, không đọc nội dung (Rust) |
+| [handlive-shared](https://github.com/HandLive/handlive-shared) | Test vector, JSON Schema, design token và catalog chuỗi giao diện dùng chung |
 
 ## Chuẩn bị workspace
 

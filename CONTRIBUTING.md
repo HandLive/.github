@@ -2,15 +2,15 @@ English | [Tiếng Việt](CONTRIBUTING.vi.md)
 
 # Contributing to HandLive
 
-HandLive is open source under the Apache License 2.0. It is made of five repositories that work together in **one workspace**:
+HandLive is an open source project under the Apache License 2.0. It brings ecosystem-native features, such as Apple Handoff, to Android. It is made of five repositories that work together in **one workspace**:
 
 | Repository | Contents |
 |------------|----------|
-| [handlive](https://github.com/HandLive/handlive) | Hub: detailed design (the contract for all code), implementation plan, design system, doc tools — **read first** |
-| [handlive-android](https://github.com/HandLive/handlive-android) | Android app (Kotlin, Gradle) |
-| [handlive-apple](https://github.com/HandLive/handlive-apple) | macOS and iOS/iPadOS apps (Swift) |
-| [handlive-relay](https://github.com/HandLive/handlive-relay) | Zero-knowledge cloud relay (Rust) |
-| [handlive-shared](https://github.com/HandLive/handlive-shared) | Shared contract: test vectors, JSON Schemas, design tokens, UI string catalog |
+| [handlive](https://github.com/HandLive/handlive) | Documentation hub: detailed design (the specification for all code), implementation plan, design system, doc tools. **Read first.** |
+| [handlive-android](https://github.com/HandLive/handlive-android) | Android phone app; runs Handoff and the other continuity features (Kotlin, Gradle) |
+| [handlive-apple](https://github.com/HandLive/handlive-apple) | Mac, iPhone and iPad apps; receive data from Android and send it back (Swift) |
+| [handlive-relay](https://github.com/HandLive/handlive-relay) | Relay for devices off the same network; never reads content (Rust) |
+| [handlive-shared](https://github.com/HandLive/handlive-shared) | Shared test vectors, JSON Schemas, design tokens and UI string catalog |
 
 ## Set up the workspace
 
