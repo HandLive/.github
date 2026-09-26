@@ -22,6 +22,6 @@ Phương châm: *WebSocket cho dữ liệu, Bluetooth cho giọng nói.*
 | Nghe gọi trên máy (Bluetooth HFP, dự phòng Opus/WebSocket) | ✅ | ❌ |
 | Camera và micro ảo cho ứng dụng họp | ✅ | ❌ |
 
-**Trạng thái:** Phase 1, đồng bộ clipboard giữa Android và Mac, đã gộp vào `main`. Việc kiểm trên máy thật của cổng G1 vẫn còn mở, nên chưa có bản phát hành. Bước tiếp theo là Phase 2: SMS, ứng dụng iPhone và iPad, relay và thông báo đẩy. Lộ trình: [docs/project-roadmap.vi.md](https://github.com/HandLive/handlive/blob/main/docs/project-roadmap.vi.md).
+**Trạng thái:** Phase 1, đồng bộ clipboard giữa Android và Mac, đã gộp vào `main`. Việc kiểm trên máy thật của cổng G1 vẫn còn mở, nên chưa có bản phát hành. Phase 2 đang làm: SMS, ứng dụng iPhone và iPad, relay và thông báo đẩy. Lộ trình: [docs/project-roadmap.vi.md](https://github.com/HandLive/handlive/blob/main/docs/project-roadmap.vi.md).
 
 Đóng góp: [CONTRIBUTING](https://github.com/HandLive/.github/blob/main/CONTRIBUTING.vi.md) · Bảo mật: [SECURITY](https://github.com/HandLive/.github/blob/main/SECURITY.vi.md) · Ứng xử: [CODE_OF_CONDUCT](https://github.com/HandLive/.github/blob/main/CODE_OF_CONDUCT.vi.md)
