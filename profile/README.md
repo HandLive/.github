@@ -2,16 +2,16 @@ English | [Tiếng Việt](https://github.com/HandLive/.github/blob/main/profile
 
 # HandLive
 
-**Your Android phone as the hub for your Mac, iPhone and iPad — clipboard, SMS, calls with live audio, and the phone's camera and microphone.** End-to-end encryption that cannot be turned off, a relay that never reads your content, and open source under the Apache License 2.0. Available in English and Vietnamese.
+HandLive is an open source project. It brings ecosystem-native features, such as Apple Handoff, to Android, so an Android device stays in sync with a Mac, iPhone and iPad, and those Apple devices sync back. End-to-end encryption stays on. The relay never reads content. Apache License 2.0. English is the default language, Vietnamese the second.
 
 Design motto: *WebSocket for data, Bluetooth for voice.*
 
 | Repository | Role | Language |
 |------------|------|----------|
-| [handlive](https://github.com/HandLive/handlive) | Hub: detailed design (the contract for all code), plan and design system. **Start here.** | Markdown, Python |
-| [handlive-android](https://github.com/HandLive/handlive-android) | The phone app, hub of the system | Kotlin |
-| [handlive-apple](https://github.com/HandLive/handlive-apple) | Mac, iPhone and iPad apps | Swift |
-| [handlive-relay](https://github.com/HandLive/handlive-relay) | Cloud relay that never reads content | Rust |
+| [handlive](https://github.com/HandLive/handlive) | Documentation hub: specification, plan and design system. **Start here.** | Markdown, Python |
+| [handlive-android](https://github.com/HandLive/handlive-android) | The Android phone app. Runs Handoff and the other continuity features | Kotlin |
+| [handlive-apple](https://github.com/HandLive/handlive-apple) | Mac, iPhone and iPad apps. Receives data from Android and sends it back | Swift |
+| [handlive-relay](https://github.com/HandLive/handlive-relay) | Relay for devices off the same network. Never reads content | Rust |
 | [handlive-shared](https://github.com/HandLive/handlive-shared) | Shared test vectors, JSON Schemas, design tokens and UI strings | JSON, Python |
 
 | Feature | macOS | iOS/iPadOS |

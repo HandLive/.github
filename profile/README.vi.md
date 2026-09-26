@@ -2,17 +2,17 @@
 
 # HandLive
 
-Điện thoại Android là điểm trung chuyển. Nó đưa clipboard, SMS, cuộc gọi kèm âm thanh, camera và mic sang macOS. iPhone và iPad nhận clipboard, SMS và thông tin cuộc gọi. Mã hóa đầu-cuối luôn bật. Relay không đọc nội dung. Mã nguồn mở, Apache License 2.0. Có tiếng Anh (mặc định) và tiếng Việt.
+HandLive là dự án mã nguồn mở. Dự án đưa các tính năng native riêng trong từng hệ sinh thái, như Handoff trên Apple, lên Android. Máy Android đồng bộ với Mac, iPhone và iPad. Máy Apple đồng bộ ngược lại với Android. Mã hóa đầu-cuối luôn bật. Relay không đọc nội dung. Giấy phép Apache 2.0. Có tiếng Anh (mặc định) và tiếng Việt.
 
 Phương châm: *WebSocket cho dữ liệu, Bluetooth cho giọng nói.*
 
 | Kho | Vai trò | Ngôn ngữ |
 |-----|---------|----------|
 | [handlive](https://github.com/HandLive/handlive) | Hub tài liệu, kế hoạch và design system. **Bắt đầu từ đây.** | Markdown, Python |
-| [handlive-android](https://github.com/HandLive/handlive-android) | Ứng dụng trên điện thoại, hub của hệ thống | Kotlin |
-| [handlive-apple](https://github.com/HandLive/handlive-apple) | Ứng dụng Mac, iPhone và iPad | Swift |
-| [handlive-relay](https://github.com/HandLive/handlive-relay) | Máy chủ chuyển tiếp, không đọc nội dung | Rust |
-| [handlive-shared](https://github.com/HandLive/handlive-shared) | Test vector, JSON Schema, design token, chuỗi giao diện dùng chung | JSON, Python |
+| [handlive-android](https://github.com/HandLive/handlive-android) | Ứng dụng trên điện thoại Android. Thực thi Handoff và các tính năng continuity | Kotlin |
+| [handlive-apple](https://github.com/HandLive/handlive-apple) | Ứng dụng Mac, iPhone và iPad. Nhận dữ liệu từ Android và gửi ngược lại | Swift |
+| [handlive-relay](https://github.com/HandLive/handlive-relay) | Máy chủ chuyển tiếp khi các máy không cùng mạng. Không đọc nội dung | Rust |
+| [handlive-shared](https://github.com/HandLive/handlive-shared) | Test vector, JSON Schema, design token và chuỗi giao diện dùng chung | JSON, Python |
 
 | Tính năng | macOS | iOS/iPadOS |
 |-----------|:-----:|:----------:|
