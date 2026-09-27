@@ -22,4 +22,4 @@ Every repository of the HandLive organization: encryption and pairing (XChaCha20
 
 ## Supported versions
 
-The project is in Phase 0 and has no release yet. Once released: the `main` branch and the latest release of each repository.
+The project has no release yet. Once released: the `main` branch and the latest release of each repository.

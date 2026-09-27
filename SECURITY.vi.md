@@ -22,4 +22,4 @@ Mọi kho của org HandLive: mã hóa và ghép nối (XChaCha20-Poly1305, X255
 
 ## Phiên bản hỗ trợ
 
-Dự án đang ở Phase 0, chưa phát hành. Khi phát hành: nhánh `main` và phiên bản mới nhất của mỗi kho.
+Dự án chưa có bản phát hành. Khi phát hành: nhánh `main` và phiên bản mới nhất của mỗi kho.
