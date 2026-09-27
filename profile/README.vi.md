@@ -6,6 +6,14 @@ HandLive là dự án mã nguồn mở. Dự án đưa các tính năng native r
 
 Phương châm: *WebSocket cho dữ liệu, Bluetooth cho giọng nói.*
 
+<p>
+<img src="https://raw.githubusercontent.com/HandLive/handlive/main/docs/screenshots/android/04-devices-connected.vi.png" alt="Android" height="360">
+<img src="https://raw.githubusercontent.com/HandLive/handlive/main/docs/screenshots/ios/04-sms-conversation.vi.png" alt="iPhone" height="360">
+<img src="https://raw.githubusercontent.com/HandLive/handlive/main/docs/screenshots/macos/04-incoming-call-panel.vi.png" alt="Mac" height="240">
+</p>
+
+[Xem thêm ảnh màn hình](https://github.com/HandLive/handlive/blob/main/docs/screenshots/README.vi.md)
+
 | Kho | Vai trò | Ngôn ngữ |
 |-----|---------|----------|
 | [handlive](https://github.com/HandLive/handlive) | Hub tài liệu: đặc tả, kế hoạch và design system. **Bắt đầu từ đây.** | Markdown, Python |
