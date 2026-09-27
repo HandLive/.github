@@ -22,6 +22,6 @@ Design motto: *WebSocket for data, Bluetooth for voice.*
 | Take calls on the computer (Bluetooth HFP, Opus/WebSocket fallback) | ✅ | ❌ |
 | Virtual camera and microphone for meeting apps | ✅ | ❌ |
 
-**Status:** Phase 1, clipboard sync between Android and Mac, is merged into `main`. The real-device checks of gate G1 are still open, so there is no release yet. Phase 2 is in progress: SMS, the iPhone and iPad app, the relay and push notifications. Roadmap: [docs/project-roadmap.md](https://github.com/HandLive/handlive/blob/main/docs/project-roadmap.md).
+**Status:** Phase 1 (clipboard sync between Android and Mac) and Phase 2 (SMS, the iPhone and iPad app, the relay and push notifications) are merged into `main`. Gates G1 (real-device checks) and G2 (Play Console) are still open, so there is no release yet. Phase 3 is in progress: call information and control. Roadmap: [docs/project-roadmap.md](https://github.com/HandLive/handlive/blob/main/docs/project-roadmap.md).
 
 [Contributing](https://github.com/HandLive/.github/blob/main/CONTRIBUTING.md) · [Security](https://github.com/HandLive/.github/blob/main/SECURITY.md) · [Code of Conduct](https://github.com/HandLive/.github/blob/main/CODE_OF_CONDUCT.md)
