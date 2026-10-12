@@ -2,34 +2,29 @@
 
 # HandLive
 
-HandLive là dự án mã nguồn mở. Dự án đưa các tính năng native riêng trong từng hệ sinh thái, như Handoff trên Apple, lên Android. Máy Android đồng bộ với Mac, iPhone và iPad. Máy Apple đồng bộ ngược lại với Android. Mã hóa đầu-cuối luôn bật. Relay không đọc nội dung. Giấy phép Apache 2.0. Có tiếng Anh (mặc định) và tiếng Việt.
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/HandLive/handlive/blob/main/LICENSE)
+[![Release](https://img.shields.io/badge/release-v0.1.0--beta.3-orange.svg)](https://github.com/HandLive/handlive/releases/tag/v0.1.0-beta.3)
 
-Phương châm: *WebSocket cho dữ liệu, Bluetooth cho giọng nói.*
+> **Never miss a signal.** Bảng nhớ tạm, SMS và thông báo cuộc gọi từ điện thoại Android trên Mac, iPhone và iPad của bạn.
 
-<p>
-<img src="https://raw.githubusercontent.com/HandLive/handlive/main/docs/screenshots/android/04-devices-connected.vi.png" alt="Android" height="360">
-<img src="https://raw.githubusercontent.com/HandLive/handlive/main/docs/screenshots/ios/04-sms-conversation.vi.png" alt="iPhone" height="360">
-<img src="https://raw.githubusercontent.com/HandLive/handlive/main/docs/screenshots/macos/04-incoming-call-panel.vi.png" alt="Mac" height="240">
-</p>
+HandLive kết nối thiết bị Android với macOS, iOS và iPadOS qua Wi-Fi cục bộ và máy chủ chuyển tiếp đám mây không lưu dữ liệu. Toàn bộ truyền tải đều được mã hóa đầu-cuối, và toàn bộ dự án là mã nguồn mở theo giấy phép Apache-2.0.
 
-[Xem thêm ảnh màn hình](https://github.com/HandLive/handlive/blob/main/docs/screenshots/README.vi.md)
+Bản thử nghiệm mới nhất: [**v0.1.0-beta.3**](https://github.com/HandLive/handlive/releases/tag/v0.1.0-beta.3) (DMG cho macOS, APK FOSS cho Android, IPA chưa ký cho iOS).
 
-| Kho | Vai trò | Ngôn ngữ |
-|-----|---------|----------|
-| [handlive](https://github.com/HandLive/handlive) | Hub tài liệu: đặc tả, kế hoạch và design system. **Bắt đầu từ đây.** | Markdown, Python |
-| [handlive-android](https://github.com/HandLive/handlive-android) | Ứng dụng trên điện thoại Android. Thực thi Handoff và các tính năng continuity | Kotlin |
-| [handlive-apple](https://github.com/HandLive/handlive-apple) | Ứng dụng Mac, iPhone và iPad. Nhận dữ liệu từ Android và gửi ngược lại | Swift |
-| [handlive-relay](https://github.com/HandLive/handlive-relay) | Máy chủ chuyển tiếp khi các máy không cùng mạng. Không đọc nội dung | Rust |
-| [handlive-shared](https://github.com/HandLive/handlive-shared) | Test vector, JSON Schema, design token và chuỗi giao diện dùng chung | JSON, Python |
+## Kho lưu trữ
 
-| Tính năng | macOS | iOS/iPadOS |
-|-----------|:-----:|:----------:|
-| Bảng nhớ tạm hai chiều | ✅ | ✅ |
-| SMS nhận/gửi | ✅ | ✅ |
-| Thông tin và điều khiển cuộc gọi | ✅ | ✅ (không âm thanh) |
-| Nghe gọi trên máy (Bluetooth HFP, dự phòng Opus/WebSocket) | ✅ | ❌ |
-| Camera và micro ảo cho ứng dụng họp | ✅ | ❌ |
+| Kho lưu trữ | Mô tả |
+|-------------|-------|
+| [handlive](https://github.com/HandLive/handlive) | Hub tài liệu, đặc tả kỹ thuật, lộ trình và công cụ workspace |
+| [handlive-android](https://github.com/HandLive/handlive-android) | Dịch vụ và ứng dụng đồng hành trên Android (Kotlin, Jetpack Compose) |
+| [handlive-apple](https://github.com/HandLive/handlive-apple) | Ứng dụng thanh menu macOS, ứng dụng iOS và iPadOS (Swift 6) |
+| [handlive-relay](https://github.com/HandLive/handlive-relay) | Máy chủ chuyển tiếp đám mây mã hóa đầu-cuối không lưu dữ liệu (Rust) |
+| [handlive-shared](https://github.com/HandLive/handlive-shared) | Lược đồ giao thức, test vector mật mã, design token và chuỗi giao diện dùng chung |
 
-**Trạng thái:** Phase 1 (đồng bộ clipboard giữa Android và Mac) và Phase 2 (SMS, ứng dụng iPhone và iPad, relay và thông báo đẩy) đã gộp vào `main`. Cổng G1 (kiểm trên máy thật) và cổng G2 (Play Console) vẫn còn mở, nên chưa có bản phát hành. Phase 3 đang làm: thông tin và điều khiển cuộc gọi. Lộ trình: [docs/project-roadmap.vi.md](https://github.com/HandLive/handlive/blob/main/docs/project-roadmap.vi.md).
+## Tài liệu và cộng đồng
 
-Đóng góp: [CONTRIBUTING](https://github.com/HandLive/.github/blob/main/CONTRIBUTING.vi.md) · Bảo mật: [SECURITY](https://github.com/HandLive/.github/blob/main/SECURITY.vi.md) · Ứng xử: [CODE_OF_CONDUCT](https://github.com/HandLive/.github/blob/main/CODE_OF_CONDUCT.vi.md)
+[Tài liệu](https://github.com/HandLive/handlive/blob/main/README.vi.md#t%C3%A0i-li%E1%BB%87u) · [Kiến trúc](https://github.com/HandLive/handlive/blob/main/docs/system-architecture.vi.md) · [Lộ trình](https://github.com/HandLive/handlive/blob/main/docs/project-roadmap.vi.md) · [Đóng góp](https://github.com/HandLive/.github/blob/main/CONTRIBUTING.vi.md) · [Bảo mật](https://github.com/HandLive/.github/blob/main/SECURITY.vi.md) · [Quy tắc ứng xử](https://github.com/HandLive/.github/blob/main/CODE_OF_CONDUCT.vi.md)
+
+## Giấy phép
+
+Apache License 2.0 — xem [LICENSE](https://github.com/HandLive/handlive/blob/main/LICENSE). Mã nguồn mở, mã hóa đầu cuối qua WebSocket; cùng xây với chúng tôi.
