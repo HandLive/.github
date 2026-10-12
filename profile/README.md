@@ -2,34 +2,29 @@ English | [Tiếng Việt](https://github.com/HandLive/.github/blob/main/profile
 
 # HandLive
 
-HandLive is an open source project. It brings ecosystem-native features, such as Apple Handoff, to Android, so an Android device stays in sync with a Mac, iPhone and iPad, and those Apple devices sync back. End-to-end encryption stays on. The relay never reads content. Apache License 2.0. English is the default language, Vietnamese the second.
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/HandLive/handlive/blob/main/LICENSE)
+[![Release](https://img.shields.io/badge/release-v0.1.0--beta.3-orange.svg)](https://github.com/HandLive/handlive/releases/tag/v0.1.0-beta.3)
 
-Design motto: *WebSocket for data, Bluetooth for voice.*
+> **Never miss a signal.** Your Android phone's clipboard, SMS, and call notifications, on your Mac, iPhone, and iPad.
 
-<p>
-<img src="https://raw.githubusercontent.com/HandLive/handlive/main/docs/screenshots/android/04-devices-connected.en.png" alt="Android" height="360">
-<img src="https://raw.githubusercontent.com/HandLive/handlive/main/docs/screenshots/ios/04-sms-conversation.en.png" alt="iPhone" height="360">
-<img src="https://raw.githubusercontent.com/HandLive/handlive/main/docs/screenshots/macos/04-incoming-call-panel.en.png" alt="Mac" height="240">
-</p>
+HandLive connects Android devices with macOS, iOS, and iPadOS over local Wi-Fi and a zero-knowledge cloud relay. All transfers are end-to-end encrypted, and the entire project is open source under Apache-2.0.
 
-[More screenshots](https://github.com/HandLive/handlive/blob/main/docs/screenshots/README.md)
+Latest pre-release: [**v0.1.0-beta.3**](https://github.com/HandLive/handlive/releases/tag/v0.1.0-beta.3) (macOS DMG, Android FOSS APK, iOS unsigned IPA).
 
-| Repository | Role | Language |
-|------------|------|----------|
-| [handlive](https://github.com/HandLive/handlive) | Documentation hub: specification, plan and design system. **Start here.** | Markdown, Python |
-| [handlive-android](https://github.com/HandLive/handlive-android) | The Android phone app. Runs Handoff and the other continuity features | Kotlin |
-| [handlive-apple](https://github.com/HandLive/handlive-apple) | Mac, iPhone and iPad apps. Receives data from Android and sends it back | Swift |
-| [handlive-relay](https://github.com/HandLive/handlive-relay) | Relay for devices off the same network. Never reads content | Rust |
-| [handlive-shared](https://github.com/HandLive/handlive-shared) | Shared test vectors, JSON Schemas, design tokens and UI strings | JSON, Python |
+## Repositories
 
-| Feature | macOS | iOS/iPadOS |
-|---------|:-----:|:----------:|
-| Two-way clipboard | ✅ | ✅ |
-| Send and receive SMS | ✅ | ✅ |
-| Call details and control | ✅ | ✅ (no audio) |
-| Take calls on the computer (Bluetooth HFP, Opus/WebSocket fallback) | ✅ | ❌ |
-| Virtual camera and microphone for meeting apps | ✅ | ❌ |
+| Repository | Description |
+|------------|-------------|
+| [handlive](https://github.com/HandLive/handlive) | Documentation hub, specifications, roadmap, and workspace tools |
+| [handlive-android](https://github.com/HandLive/handlive-android) | Android service and companion application (Kotlin, Jetpack Compose) |
+| [handlive-apple](https://github.com/HandLive/handlive-apple) | macOS menu bar app, iOS, and iPadOS applications (Swift 6) |
+| [handlive-relay](https://github.com/HandLive/handlive-relay) | Zero-knowledge end-to-end encrypted cloud relay server (Rust) |
+| [handlive-shared](https://github.com/HandLive/handlive-shared) | Shared protocol schemas, crypto test vectors, design tokens, and UI strings |
 
-**Status:** Phase 1 (clipboard sync between Android and Mac) and Phase 2 (SMS, the iPhone and iPad app, the relay and push notifications) are merged into `main`. Gates G1 (real-device checks) and G2 (Play Console) are still open, so there is no release yet. Phase 3 is in progress: call information and control. Roadmap: [docs/project-roadmap.md](https://github.com/HandLive/handlive/blob/main/docs/project-roadmap.md).
+## Documentation and community
 
-[Contributing](https://github.com/HandLive/.github/blob/main/CONTRIBUTING.md) · [Security](https://github.com/HandLive/.github/blob/main/SECURITY.md) · [Code of Conduct](https://github.com/HandLive/.github/blob/main/CODE_OF_CONDUCT.md)
+[Documentation](https://github.com/HandLive/handlive#documentation) · [Architecture](https://github.com/HandLive/handlive/blob/main/docs/system-architecture.md) · [Roadmap](https://github.com/HandLive/handlive/blob/main/docs/project-roadmap.md) · [Contributing](https://github.com/HandLive/.github/blob/main/CONTRIBUTING.md) · [Security](https://github.com/HandLive/.github/blob/main/SECURITY.md) · [Code of Conduct](https://github.com/HandLive/.github/blob/main/CODE_OF_CONDUCT.md)
+
+## License
+
+Apache License 2.0 — see [LICENSE](https://github.com/HandLive/handlive/blob/main/LICENSE). Open source, end-to-end encrypted over WebSocket; come build it with us.
