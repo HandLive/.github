@@ -3,13 +3,13 @@ English | [Tiếng Việt](https://github.com/HandLive/.github/blob/main/profile
 # HandLive
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/HandLive/handlive/blob/main/LICENSE)
-[![Release](https://img.shields.io/badge/release-v0.1.0--beta.3-orange.svg)](https://github.com/HandLive/handlive/releases/tag/v0.1.0-beta.3)
+[![Release](https://img.shields.io/badge/release-v0.1.1-orange.svg)](https://github.com/HandLive/handlive/releases/tag/v0.1.1)
 
 > **Never miss a signal.** Your Android phone's clipboard, SMS, and call notifications, on your Mac, iPhone, and iPad.
 
 HandLive connects Android devices with macOS, iOS, and iPadOS over local Wi-Fi and a zero-knowledge cloud relay. All transfers are end-to-end encrypted, and the entire project is open source under Apache-2.0.
 
-Latest pre-release: [**v0.1.0-beta.3**](https://github.com/HandLive/handlive/releases/tag/v0.1.0-beta.3) (macOS DMG, Android FOSS APK, iOS unsigned IPA).
+Latest release: [**v0.1.1**](https://github.com/HandLive/handlive/releases/tag/v0.1.1) (macOS DMG, Android FOSS APK, iOS unsigned IPA).
 
 ## Repositories
 
