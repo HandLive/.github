@@ -3,13 +3,13 @@
 # HandLive
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/HandLive/handlive/blob/main/LICENSE)
-[![Release](https://img.shields.io/badge/release-v0.1.1-orange.svg)](https://github.com/HandLive/handlive/releases/tag/v0.1.1)
+[![Release](https://img.shields.io/badge/release-v0.2.0-orange.svg)](https://github.com/HandLive/handlive/releases/tag/v0.2.0)
 
 > **Never miss a signal.** Bảng nhớ tạm, SMS và thông báo cuộc gọi từ điện thoại Android trên Mac, iPhone và iPad của bạn.
 
 HandLive kết nối thiết bị Android với macOS, iOS và iPadOS qua Wi-Fi cục bộ và máy chủ chuyển tiếp đám mây không lưu dữ liệu. Toàn bộ truyền tải đều được mã hóa đầu-cuối, và toàn bộ dự án là mã nguồn mở theo giấy phép Apache-2.0.
 
-Bản phát hành mới nhất: [**v0.1.1**](https://github.com/HandLive/handlive/releases/tag/v0.1.1) (DMG cho macOS, APK FOSS cho Android, IPA chưa ký cho iOS).
+Bản phát hành mới nhất: [**v0.2.0**](https://github.com/HandLive/handlive/releases/tag/v0.2.0) (DMG cho macOS, APK FOSS cho Android, IPA chưa ký cho iOS).
 
 ## Kho lưu trữ
 
